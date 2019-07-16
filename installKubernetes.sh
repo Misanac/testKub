@@ -1,5 +1,9 @@
 #!/bin/sh
 
+#Install prep
+sudo apt-get install curl -y
+sudo apt-get install apt-utils -y
+
 # Install Docker
 curl -sSL get.docker.com | sh && \
   sudo usermod pi -aG docker
